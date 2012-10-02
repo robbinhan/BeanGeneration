@@ -6,7 +6,6 @@ return array(
         'f_uid',
         'f_operuid',
     ),
-    'className' =>'bill',
-    'extend'    => 'model',
-    'interface' => 'api',
+    'className'=>'bill',
+    'extend' => 'model',
 );

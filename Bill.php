@@ -1,40 +1,40 @@
 <?php
-class Bill extends Model
+class Bill extends Model implements Api
 {
     private $f_id = null;
     private $f_status = null;
     private $f_uid = null;
     private $f_operuid = null;
-    public function  setFid($fid)
+    public function  setId($id)
     {
-         $this->fid = $fid;
+         $this->id = $id;
     }
-    public function  setFstatus($fstatus)
+    public function  setStatus($status)
     {
-         $this->fstatus = $fstatus;
+         $this->status = $status;
     }
-    public function  setFuid($fuid)
+    public function  setUid($uid)
     {
-         $this->fuid = $fuid;
+         $this->uid = $uid;
     }
-    public function  setFoperuid($foperuid)
+    public function  setOperuid($operuid)
     {
-         $this->foperuid = $foperuid;
+         $this->operuid = $operuid;
     }
-    public function  getFid()
+    public function  getId()
     {
-        return $this->fid;
+        return $this->id;
     }
-    public function  getFstatus()
+    public function  getStatus()
     {
-        return $this->fstatus;
+        return $this->status;
     }
-    public function  getFuid()
+    public function  getUid()
     {
-        return $this->fuid;
+        return $this->uid;
     }
-    public function  getFoperuid()
+    public function  getOperuid()
     {
-        return $this->foperuid;
+        return $this->operuid;
     }
 }
